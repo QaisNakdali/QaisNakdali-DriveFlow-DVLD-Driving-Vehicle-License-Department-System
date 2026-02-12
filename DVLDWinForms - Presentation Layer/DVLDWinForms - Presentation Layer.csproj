@@ -1,0 +1,404 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E78B6EC6-F5E1-4F18-9B09-D040D4349208}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DVLDWinForms___Presentation_Layer</RootNamespace>
+    <AssemblyName>DVLDWinForms - Presentation Layer</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ComponentFactory.Krypton.Docking">
+      <HintPath>..\..\..\Downloads\Krypton-master\Krypton-master\Bin\ComponentFactory.Krypton.Docking.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Navigator">
+      <HintPath>..\..\..\Downloads\Krypton-master\Krypton-master\Bin\ComponentFactory.Krypton.Navigator.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Ribbon">
+      <HintPath>..\..\..\Downloads\Krypton-master\Krypton-master\Bin\ComponentFactory.Krypton.Ribbon.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Toolkit">
+      <HintPath>..\..\..\Downloads\Krypton-master\Krypton-master\Bin\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Workspace">
+      <HintPath>..\..\..\Downloads\Krypton-master\Krypton-master\Bin\ComponentFactory.Krypton.Workspace.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialSkin, Version=2.3.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\MaterialSkin.2.2.3.1\lib\net461\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="clsNavigationService.cs" />
+    <Compile Include="clsUpperBarSettings.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPersonDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPersonDetails.Designer.cs">
+      <DependentUpon>frmPersonDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ucAddNewPersonCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucAddNewPersonCard.Designer.cs">
+      <DependentUpon>ucAddNewPersonCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucCircularPictureBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucCircularPictureBox.Designer.cs">
+      <DependentUpon>ucCircularPictureBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucComingSoon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucComingSoon.Designer.cs">
+      <DependentUpon>ucComingSoon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucPeopleScreen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucPeopleScreen.Designer.cs">
+      <DependentUpon>ucPeopleScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucShowPersonInfoCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucShowPersonInfoCard.Designer.cs">
+      <DependentUpon>ucShowPersonInfoCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucUpperBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucUpperBar.Designer.cs">
+      <DependentUpon>ucUpperBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UtilityClass.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPersonDetails.resx">
+      <DependentUpon>frmPersonDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucAddNewPersonCard.resx">
+      <DependentUpon>ucAddNewPersonCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucCircularPictureBox.resx">
+      <DependentUpon>ucCircularPictureBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucComingSoon.resx">
+      <DependentUpon>ucComingSoon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucPeopleScreen.resx">
+      <DependentUpon>ucPeopleScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucShowPersonInfoCard.resx">
+      <DependentUpon>ucShowPersonInfoCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucUpperBar.resx">
+      <DependentUpon>ucUpperBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DVLDWinFormsBusinessLayer\DVLDWinFormsBusinessLayer.csproj">
+      <Project>{f67ae974-fb99-4548-8f0f-8522f6982ca4}</Project>
+      <Name>DVLDWinFormsBusinessLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-profile %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-profile %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\id-card.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\male-and-female.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\male-and-female %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\male-and-female %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\location.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\globe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\globe %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Copilot_20251121_192204.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Copilot_20251121_192..._imresizer.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Copilot_20251122_191..._imresizer.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Copilot_20251123_023..._imresizer.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\earth.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\house.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\at-sign.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gender.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\male-and-female %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\id-card %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user %286%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\earth %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\id.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\racing-car.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Copilot_20251129_211422-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c7faa7cf-624e-4fd0-999a-dd49b31f0d10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AnasAlquraishi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c7faa7cf-624e-4fd0-999a-dd49b31f0d101.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AnasAlquraishi1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user %282%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\man dumb.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crowd-of-users.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user %287%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vote-no.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user %288%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\id-card %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\genders %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\email.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\location %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\citizenship.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WomanDefaultPitcutre.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ManDefaultPicture.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\waste.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pencil %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\waste %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\face-id.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-user %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-user %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\face-id %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\information.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\construction.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\construction %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rectangle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\تصميم بدون عنوان %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\information %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coming-soon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
