@@ -34,19 +34,19 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="ComponentFactory.Krypton.Docking">
-      <HintPath>..\..\..\Downloads\Krypton-master\Krypton-master\Bin\ComponentFactory.Krypton.Docking.dll</HintPath>
+      <HintPath>..\..\..\..\Downloads\Krypton-master\Krypton-master\Bin\ComponentFactory.Krypton.Docking.dll</HintPath>
     </Reference>
     <Reference Include="ComponentFactory.Krypton.Navigator">
-      <HintPath>..\..\..\Downloads\Krypton-master\Krypton-master\Bin\ComponentFactory.Krypton.Navigator.dll</HintPath>
+      <HintPath>..\..\..\..\Downloads\Krypton-master\Krypton-master\Bin\ComponentFactory.Krypton.Navigator.dll</HintPath>
     </Reference>
     <Reference Include="ComponentFactory.Krypton.Ribbon">
-      <HintPath>..\..\..\Downloads\Krypton-master\Krypton-master\Bin\ComponentFactory.Krypton.Ribbon.dll</HintPath>
+      <HintPath>..\..\..\..\Downloads\Krypton-master\Krypton-master\Bin\ComponentFactory.Krypton.Ribbon.dll</HintPath>
     </Reference>
     <Reference Include="ComponentFactory.Krypton.Toolkit">
-      <HintPath>..\..\..\Downloads\Krypton-master\Krypton-master\Bin\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+      <HintPath>..\..\..\..\Downloads\Krypton-master\Krypton-master\Bin\ComponentFactory.Krypton.Toolkit.dll</HintPath>
     </Reference>
     <Reference Include="ComponentFactory.Krypton.Workspace">
-      <HintPath>..\..\..\Downloads\Krypton-master\Krypton-master\Bin\ComponentFactory.Krypton.Workspace.dll</HintPath>
+      <HintPath>..\..\..\..\Downloads\Krypton-master\Krypton-master\Bin\ComponentFactory.Krypton.Workspace.dll</HintPath>
     </Reference>
     <Reference Include="MaterialSkin, Version=2.3.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>packages\MaterialSkin.2.2.3.1\lib\net461\MaterialSkin.dll</HintPath>
@@ -173,130 +173,13 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\user-profile.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\user-profile %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\user-profile %282%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\id-card.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\male-and-female.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\male-and-female %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\male-and-female %282%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\mail.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\location.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\pin.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\calendar.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\calendar %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\globe.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\user %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\user %282%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\user %283%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\globe %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Copilot_20251121_192204.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Copilot_20251121_192..._imresizer.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Copilot_20251122_191..._imresizer.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Copilot_20251123_023..._imresizer.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\calendar %282%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\earth.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\calendar %283%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\house.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\at-sign.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\gender.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\male-and-female %283%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\id-card %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\user %284%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\user %285%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\user %286%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\earth %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\phone %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\id.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\racing-car.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Copilot_20251129_211422-removebg-preview.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\c7faa7cf-624e-4fd0-999a-dd49b31f0d10.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\AnasAlquraishi.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\c7faa7cf-624e-4fd0-999a-dd49b31f0d101.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\AnasAlquraishi1.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\user %282%291.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\man dumb.jpg" />
@@ -344,12 +227,6 @@
     <None Include="Resources\ManDefaultPicture.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\pencil.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\waste.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\pencil %281%29.png" />
   </ItemGroup>
   <ItemGroup>
@@ -375,18 +252,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\information.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\construction.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\construction %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\rectangle.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\تصميم بدون عنوان %284%29.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\information %281%29.png" />

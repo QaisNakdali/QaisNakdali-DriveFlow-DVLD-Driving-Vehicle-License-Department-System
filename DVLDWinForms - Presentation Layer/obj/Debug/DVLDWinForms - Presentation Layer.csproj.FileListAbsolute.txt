@@ -1,0 +1,33 @@
+C:\Users\qaisn\source\repos\DVLDWinForms\DVLDWinForms - Presentation Layer\obj\Debug\DVLDWinForms - Presentation Layer.csproj.AssemblyReference.cache
+C:\Users\qaisn\source\repos\DVLDWinForms\DVLDWinForms - Presentation Layer\obj\Debug\DVLDWinForms___Presentation_Layer.Form1.resources
+C:\Users\qaisn\source\repos\DVLDWinForms\DVLDWinForms - Presentation Layer\obj\Debug\DVLDWinForms___Presentation_Layer.frmPersonDetails.resources
+C:\Users\qaisn\source\repos\DVLDWinForms\DVLDWinForms - Presentation Layer\obj\Debug\DVLDWinForms___Presentation_Layer.ucAddNewPersonCard.resources
+C:\Users\qaisn\source\repos\DVLDWinForms\DVLDWinForms - Presentation Layer\obj\Debug\DVLDWinForms___Presentation_Layer.ucCircularPictureBox.resources
+C:\Users\qaisn\source\repos\DVLDWinForms\DVLDWinForms - Presentation Layer\obj\Debug\DVLDWinForms___Presentation_Layer.ucComingSoon.resources
+C:\Users\qaisn\source\repos\DVLDWinForms\DVLDWinForms - Presentation Layer\obj\Debug\DVLDWinForms___Presentation_Layer.ucPeopleScreen.resources
+C:\Users\qaisn\source\repos\DVLDWinForms\DVLDWinForms - Presentation Layer\obj\Debug\DVLDWinForms___Presentation_Layer.ucShowPersonInfoCard.resources
+C:\Users\qaisn\source\repos\DVLDWinForms\DVLDWinForms - Presentation Layer\obj\Debug\DVLDWinForms___Presentation_Layer.ucUpperBar.resources
+C:\Users\qaisn\source\repos\DVLDWinForms\DVLDWinForms - Presentation Layer\obj\Debug\DVLDWinForms - Presentation Layer.csproj.GenerateResource.cache
+C:\Users\qaisn\source\repos\DVLDWinForms\DVLDWinForms - Presentation Layer\obj\Debug\DVLDWinForms___Presentation_Layer.Properties.Resources.resources
+C:\Users\qaisn\source\repos\DVLDWinForms\DVLDWinForms - Presentation Layer\obj\Debug\DVLDWinForms - Presentation Layer.csproj.CoreCompileInputs.cache
+C:\Users\qaisn\source\repos\DVLDWinForms\DVLDWinForms - Presentation Layer\bin\Debug\DVLDWinForms - Presentation Layer.exe.config
+C:\Users\qaisn\source\repos\DVLDWinForms\DVLDWinForms - Presentation Layer\bin\Debug\DVLDWinForms - Presentation Layer.exe
+C:\Users\qaisn\source\repos\DVLDWinForms\DVLDWinForms - Presentation Layer\bin\Debug\DVLDWinForms - Presentation Layer.pdb
+C:\Users\qaisn\source\repos\DVLDWinForms\DVLDWinForms - Presentation Layer\bin\Debug\ComponentFactory.Krypton.Docking.dll
+C:\Users\qaisn\source\repos\DVLDWinForms\DVLDWinForms - Presentation Layer\bin\Debug\ComponentFactory.Krypton.Navigator.dll
+C:\Users\qaisn\source\repos\DVLDWinForms\DVLDWinForms - Presentation Layer\bin\Debug\ComponentFactory.Krypton.Ribbon.dll
+C:\Users\qaisn\source\repos\DVLDWinForms\DVLDWinForms - Presentation Layer\bin\Debug\ComponentFactory.Krypton.Toolkit.dll
+C:\Users\qaisn\source\repos\DVLDWinForms\DVLDWinForms - Presentation Layer\bin\Debug\ComponentFactory.Krypton.Workspace.dll
+C:\Users\qaisn\source\repos\DVLDWinForms\DVLDWinForms - Presentation Layer\bin\Debug\DVLDWinFormsBusinessLayer.dll
+C:\Users\qaisn\source\repos\DVLDWinForms\DVLDWinForms - Presentation Layer\bin\Debug\MaterialSkin.dll
+C:\Users\qaisn\source\repos\DVLDWinForms\DVLDWinForms - Presentation Layer\bin\Debug\DVLDWinFormsDateAccessLayer.dll
+C:\Users\qaisn\source\repos\DVLDWinForms\DVLDWinForms - Presentation Layer\bin\Debug\DVLDWinFormsBusinessLayer.pdb
+C:\Users\qaisn\source\repos\DVLDWinForms\DVLDWinForms - Presentation Layer\bin\Debug\ComponentFactory.Krypton.Docking.pdb
+C:\Users\qaisn\source\repos\DVLDWinForms\DVLDWinForms - Presentation Layer\bin\Debug\ComponentFactory.Krypton.Navigator.pdb
+C:\Users\qaisn\source\repos\DVLDWinForms\DVLDWinForms - Presentation Layer\bin\Debug\ComponentFactory.Krypton.Ribbon.pdb
+C:\Users\qaisn\source\repos\DVLDWinForms\DVLDWinForms - Presentation Layer\bin\Debug\ComponentFactory.Krypton.Toolkit.pdb
+C:\Users\qaisn\source\repos\DVLDWinForms\DVLDWinForms - Presentation Layer\bin\Debug\ComponentFactory.Krypton.Workspace.pdb
+C:\Users\qaisn\source\repos\DVLDWinForms\DVLDWinForms - Presentation Layer\bin\Debug\DVLDWinFormsDateAccessLayer.pdb
+C:\Users\qaisn\source\repos\DVLDWinForms\DVLDWinForms - Presentation Layer\obj\Debug\DVLDWinF.595A9CF6.Up2Date
+C:\Users\qaisn\source\repos\DVLDWinForms\DVLDWinForms - Presentation Layer\obj\Debug\DVLDWinForms - Presentation Layer.exe
+C:\Users\qaisn\source\repos\DVLDWinForms\DVLDWinForms - Presentation Layer\obj\Debug\DVLDWinForms - Presentation Layer.pdb
