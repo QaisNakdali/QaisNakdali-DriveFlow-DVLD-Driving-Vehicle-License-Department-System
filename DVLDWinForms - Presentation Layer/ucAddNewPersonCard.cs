@@ -13,6 +13,7 @@ using DVLDWinFormsBusinessLayer;
 using System.IO;
 using static System.Net.Mime.MediaTypeNames;
 using System.Security.Cryptography;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace DVLDWinForms___Presentation_Layer
 {
@@ -28,7 +29,7 @@ namespace DVLDWinForms___Presentation_Layer
                 handler(PesonID);
             }
         }
-       
+
         public ucAddNewPersonCard()
         {
             InitializeComponent();
@@ -37,7 +38,7 @@ namespace DVLDWinForms___Presentation_Layer
             GetCountries();
             NoUnder18YearsPeople();
             SetUpToolTip();
-            _NationalNoPrefixLength = PrefixNationalNo("N",tbNationalNo);
+            _NationalNoPrefixLength = PrefixNationalNo("N", tbNationalNo);
             _PhoneNumberPrefixLength = PrefixNationalNo("+", tbPhoneNumber);
 
             tbFirstName.Validating += ValidateRequiredFields;
@@ -46,7 +47,7 @@ namespace DVLDWinForms___Presentation_Layer
             tbNationalNo.Validating += ValidateRequiredFields;
             tbPhoneNumber.Validating += ValidateRequiredFields;
             tbAddress.Validating += ValidateRequiredFields;
-            
+
 
         }
 
@@ -65,7 +66,7 @@ namespace DVLDWinForms___Presentation_Layer
             return Country.CountryName;
         }
 
-        public void LoadPersonForUpdate (int PersonId)
+        public void LoadPersonForUpdate(int PersonId)
         {
             _PersonID = PersonId;
             _IsUpdateMode = true;
@@ -107,7 +108,7 @@ namespace DVLDWinForms___Presentation_Layer
         }
         private void SetUpToolTip()
         {
-            ToolTip tooltip1 = new ToolTip();
+            System.Windows.Forms.ToolTip tooltip1 = new System.Windows.Forms.ToolTip();
 
             tooltip1.AutoPopDelay = 5000;
             tooltip1.InitialDelay = 500;
@@ -142,6 +143,35 @@ namespace DVLDWinForms___Presentation_Layer
             }
         }
 
+        private bool IsThereEmptySlots()
+        {
+            if (string.IsNullOrWhiteSpace(tbFirstName.Text))
+            {
+                return true;
+            }
+            if (string.IsNullOrWhiteSpace(tbSecondName.Text))
+            {
+                return true;
+            }
+            if (string.IsNullOrEmpty(tbLastName.Text))
+            {
+                return true;
+            }
+            if (string.IsNullOrEmpty(tbNationalNo.Text) || tbNationalNo.Text == "N")
+            {
+                return true;
+            }
+            if (string.IsNullOrEmpty(tbPhoneNumber.Text) || tbPhoneNumber.Text == "+")
+            {
+                return true;
+            }
+            if (string.IsNullOrEmpty(tbAddress.Text))
+            {
+                return true;
+            }
+
+            return false;
+        }
         private int PrefixNationalNo(string Prefix, KryptonTextBox tb)
         {
             tb.Text = Prefix;
@@ -201,7 +231,7 @@ namespace DVLDWinForms___Presentation_Layer
         {
 
 
-            if (_HasErrors)
+            if (_HasErrors || IsThereEmptySlots())
             {
                 MessageBox.Show("Please complete all required fields!","Save Failed",MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
