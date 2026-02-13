@@ -1,6 +1,0 @@
-C:\Users\qaisn\source\repos\DVLDWinForms\clsDataAccessSettings\bin\Debug\clsDataAccessSettings.dll
-C:\Users\qaisn\source\repos\DVLDWinForms\clsDataAccessSettings\bin\Debug\clsDataAccessSettings.pdb
-C:\Users\qaisn\source\repos\DVLDWinForms\clsDataAccessSettings\obj\Debug\clsDataAccessSettings.csproj.AssemblyReference.cache
-C:\Users\qaisn\source\repos\DVLDWinForms\clsDataAccessSettings\obj\Debug\clsDataAccessSettings.csproj.CoreCompileInputs.cache
-C:\Users\qaisn\source\repos\DVLDWinForms\clsDataAccessSettings\obj\Debug\clsDataAccessSettings.dll
-C:\Users\qaisn\source\repos\DVLDWinForms\clsDataAccessSettings\obj\Debug\clsDataAccessSettings.pdb

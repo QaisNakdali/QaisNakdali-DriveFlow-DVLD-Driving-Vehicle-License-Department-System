@@ -1,8 +1,0 @@
-C:\Users\qaisn\source\repos\DVLDWinForms\DVLDWinFormsDateAccessLayer\bin\Debug\DVLDWinFormsDateAccessLayer.dll
-C:\Users\qaisn\source\repos\DVLDWinForms\DVLDWinFormsDateAccessLayer\bin\Debug\DVLDWinFormsDateAccessLayer.pdb
-C:\Users\qaisn\source\repos\DVLDWinForms\DVLDWinFormsDateAccessLayer\bin\Debug\MaterialSkin.dll
-C:\Users\qaisn\source\repos\DVLDWinForms\DVLDWinFormsDateAccessLayer\obj\Debug\DVLDWinFormsDateAccessLayer.csproj.AssemblyReference.cache
-C:\Users\qaisn\source\repos\DVLDWinForms\DVLDWinFormsDateAccessLayer\obj\Debug\DVLDWinFormsDateAccessLayer.csproj.CoreCompileInputs.cache
-C:\Users\qaisn\source\repos\DVLDWinForms\DVLDWinFormsDateAccessLayer\obj\Debug\DVLDWinF.B7DEFFAC.Up2Date
-C:\Users\qaisn\source\repos\DVLDWinForms\DVLDWinFormsDateAccessLayer\obj\Debug\DVLDWinFormsDateAccessLayer.dll
-C:\Users\qaisn\source\repos\DVLDWinForms\DVLDWinFormsDateAccessLayer\obj\Debug\DVLDWinFormsDateAccessLayer.pdb
