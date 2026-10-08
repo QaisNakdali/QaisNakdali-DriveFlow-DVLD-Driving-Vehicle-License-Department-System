@@ -19,7 +19,7 @@ namespace DVLDWinForms___Presentation_Layer
 
         public event RefreshDataEventHandler RefreshData;
 
-        public frmPersonDetails(enMode Mode, int PersonId)
+        public frmPersonDetails(enPersonMode Mode, int PersonId)
         {
             this.SuspendLayout();
             InitializeComponent();
@@ -29,21 +29,25 @@ namespace DVLDWinForms___Presentation_Layer
             
         }
 
-        public enum enMode { Add = 1, Show = 2, Update = 3 }
-        public static enMode _Mode;
+        public enum enPersonMode { Add = 1, Show = 2, Update = 3 }
+        private static enPersonMode _Mode;
         private int _PersonID = 0;
+        private int _NewPersonID = 0;
 
         private void GetThePanelMode()
         {
+            if (DesignMode) return;
+
+
             switch (_Mode)
             {
-                case enMode.Add:
+                case enPersonMode.Add:
                     AddNewPersonScreen();
                     break;
-                case enMode.Show:
+                case enPersonMode.Show:
                     ShowPersonInfoScreen();
                     break;
-                case enMode.Update:
+                case enPersonMode.Update:
                     UpdatePersonInfoScreen();
                     break;
                 default:
@@ -78,8 +82,8 @@ namespace DVLDWinForms___Presentation_Layer
             lblModeName.Text = "Show Person Info";
             lblPersonID.Text = _PersonID.ToString();
             lblPersonID.ForeColor = Color.Red;
-            UserControl uc;
-            uc = new ucShowPersonInfoCard(_PersonID);
+            var uc = new ucShowPersonInfoCard();
+            uc.LoadPerson(_PersonID);
             pnlUserControlContainer.Controls.Add(uc);
             uc.Dock = DockStyle.Fill;
         }
@@ -105,19 +109,24 @@ namespace DVLDWinForms___Presentation_Layer
             DataTable dtPeopleInfo = clsPerson.GetAllPeople();
 
             RefreshData?.Invoke(this, dtPeopleInfo);
-
+            DialogResult = DialogResult.OK;
 
             this.Close();
         }
         private void ucAddNewPersonCard2_OnSaveComplete(int obj)
         {
-            int PersonID = obj;
-            lblPersonID.Text = PersonID.ToString();
+           _NewPersonID = obj;
+            lblPersonID.Text = _NewPersonID.ToString();
             lblPersonID.ForeColor = Color.Red;
         }
 
+        
+
         private async void frmPersonDetails_Load(object sender, EventArgs e)
         {
+            if (DesignMode) return;
+
+
             pnlLoading.BringToFront();
             pnlLoading.Visible = true;
             pnlMain.Visible = false;
@@ -136,6 +145,11 @@ namespace DVLDWinForms___Presentation_Layer
         private void btnEditPerson_Click(object sender, EventArgs e)
         {
             UpdatePersonInfoScreen();
+        }
+        
+        public int GetNewPersonID()
+        {
+            return _NewPersonID;
         }
     }
 }

@@ -1,5 +1,4 @@
-﻿using ComponentFactory.Krypton.Docking;
-using ComponentFactory.Krypton.Toolkit;
+﻿using Krypton.Toolkit;
 using System;
 using System.Collections.Generic;
 using System.Drawing;

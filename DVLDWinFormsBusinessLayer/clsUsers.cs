@@ -109,6 +109,11 @@ namespace DVLDWinFormsBusinessLayer
             return clsUsersDataAccessLayer.IsUserExist(UserID);
         }
 
+        static public bool IsUserExist(string Username)
+        {
+            return clsUsersDataAccessLayer.IsUserExist(Username);
+        }
+
         public bool Save()
         {
             switch (Mode)

@@ -8,8 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using DVLDWinFormsBusinessLayer;
-using ComponentFactory.Krypton.Toolkit;
+using Krypton.Toolkit;
 using System.Runtime.CompilerServices;
 
 namespace DVLDWinForms___Presentation_Layer
@@ -21,7 +20,7 @@ namespace DVLDWinForms___Presentation_Layer
             InitializeComponent();
 
             clsNavigationService.Initialize(MainPanel, ucUpperBar1);
-          
+
         }
     }
     

@@ -16,7 +16,7 @@ namespace DVLDWinForms___Presentation_Layer
         public ucUpperBar()
         {
             InitializeComponent();
-            ucCircularPictureBox1.Mode = ucCircularPictureBox.PictureMode.Small;
+            //ucCircularPictureBox1.Mode = ucCircularPictureBox.PictureMode.Small;
         }
 
         private bool Expand = false;
@@ -48,6 +48,10 @@ namespace DVLDWinForms___Presentation_Layer
             clsUpperBarSettings.ClickPageEffect(btnApplications);
         }
 
+        public void BackToApplicationsScreen(object sender, EventArgs e)
+        {
+            btnApplications_Click(sender, e);
+        }
         private void btnPeople_Click(object sender, EventArgs e)
         {
             MenuItemClicked?.Invoke(this, "People");
@@ -90,7 +94,7 @@ namespace DVLDWinForms___Presentation_Layer
                 lblAdditionalMenu.Text = "-";
                 
                 lblAdditionalMenu.Location = new Point(2447, 25);
-                ucCircularPictureBox1.Location = new Point(2284, 14);
+                //ucCircularPictureBox1.Location = new Point(2284, 14);
                 btnLogOut.Visible = true;
                 btnSettings.Visible = true;
                 Expand = true;
@@ -99,7 +103,7 @@ namespace DVLDWinForms___Presentation_Layer
             {
                 lblAdditionalMenu.Text = "...";
                 lblAdditionalMenu.Location = new Point(2456, 17);
-                ucCircularPictureBox1.Location = new Point(2393, 14);
+                //ucCircularPictureBox1.Location = new Point(2393, 14);
                 btnLogOut.Visible = false;
                 btnSettings.Visible = false;
                 Expand = false;

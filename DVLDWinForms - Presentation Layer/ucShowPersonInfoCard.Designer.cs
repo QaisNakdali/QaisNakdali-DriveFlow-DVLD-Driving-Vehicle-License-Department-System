@@ -55,7 +55,6 @@
             this.NationalNo = new System.Windows.Forms.Label();
             this.PersonName = new System.Windows.Forms.Label();
             this.pnlPictureContainer = new System.Windows.Forms.Panel();
-            this.pbProfilePicture = new DVLDWinForms___Presentation_Layer.ucCircularPictureBox();
             this.pnlNewPersonCard.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnTooltTip)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -389,19 +388,10 @@
             // 
             // pnlPictureContainer
             // 
-            this.pnlPictureContainer.Controls.Add(this.pbProfilePicture);
             this.pnlPictureContainer.Location = new System.Drawing.Point(899, 320);
             this.pnlPictureContainer.Name = "pnlPictureContainer";
             this.pnlPictureContainer.Size = new System.Drawing.Size(551, 459);
             this.pnlPictureContainer.TabIndex = 102;
-            // 
-            // pbProfilePicture
-            // 
-            this.pbProfilePicture.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.pbProfilePicture.Location = new System.Drawing.Point(49, 10);
-            this.pbProfilePicture.Name = "pbProfilePicture";
-            this.pbProfilePicture.Size = new System.Drawing.Size(149, 149);
-            this.pbProfilePicture.TabIndex = 0;
             // 
             // ucShowPersonInfoCard
             // 
@@ -455,6 +445,5 @@
         private System.Windows.Forms.Label lblDateOfBirth;
         private System.Windows.Forms.Label lblAddress;
         private System.Windows.Forms.Label lblCountry;
-        private ucCircularPictureBox pbProfilePicture;
     }
 }

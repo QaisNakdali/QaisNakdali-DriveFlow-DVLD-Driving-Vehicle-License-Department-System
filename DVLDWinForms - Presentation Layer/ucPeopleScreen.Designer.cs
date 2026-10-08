@@ -32,14 +32,14 @@
             this.MainPanel = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.tbSearch = new System.Windows.Forms.TextBox();
-            this.cbPeopleSearchFilter = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
+            this.cbPeopleSearchFilter = new Krypton.Toolkit.KryptonComboBox();
             this.lblLoading = new System.Windows.Forms.Label();
-            this.btnAddUser = new System.Windows.Forms.Button();
+            this.btnAddPerson = new System.Windows.Forms.Button();
             this.lblNumberOfPeople = new System.Windows.Forms.Label();
             this.lblRecords = new System.Windows.Forms.Label();
             this.lblFilterBy = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.dgvPeopleInformation = new ComponentFactory.Krypton.Toolkit.KryptonDataGridView();
+            this.dgvPeopleInformation = new Krypton.Toolkit.KryptonDataGridView();
             this.cmsPeople = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.addPersonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.showPersonInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -64,7 +64,7 @@
             this.MainPanel.Controls.Add(this.tbSearch);
             this.MainPanel.Controls.Add(this.cbPeopleSearchFilter);
             this.MainPanel.Controls.Add(this.lblLoading);
-            this.MainPanel.Controls.Add(this.btnAddUser);
+            this.MainPanel.Controls.Add(this.btnAddPerson);
             this.MainPanel.Controls.Add(this.lblNumberOfPeople);
             this.MainPanel.Controls.Add(this.lblRecords);
             this.MainPanel.Controls.Add(this.lblFilterBy);
@@ -103,12 +103,13 @@
             // cbPeopleSearchFilter
             // 
             this.cbPeopleSearchFilter.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cbPeopleSearchFilter.DropBackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.TabCustom1;
-            this.cbPeopleSearchFilter.DropButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Custom1;
+            this.cbPeopleSearchFilter.DropBackStyle = Krypton.Toolkit.PaletteBackStyle.TabCustom1;
+            this.cbPeopleSearchFilter.DropButtonStyle = Krypton.Toolkit.ButtonStyle.Custom1;
             this.cbPeopleSearchFilter.DropDownHeight = 400;
             this.cbPeopleSearchFilter.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbPeopleSearchFilter.DropDownWidth = 121;
-            this.cbPeopleSearchFilter.InputControlStyle = ComponentFactory.Krypton.Toolkit.InputControlStyle.Custom1;
+            this.cbPeopleSearchFilter.InputControlStyle = Krypton.Toolkit.InputControlStyle.Custom1;
+            this.cbPeopleSearchFilter.IntegralHeight = false;
             this.cbPeopleSearchFilter.Items.AddRange(new object[] {
             "None",
             "Person ID",
@@ -125,8 +126,8 @@
             this.cbPeopleSearchFilter.Location = new System.Drawing.Point(140, 151);
             this.cbPeopleSearchFilter.Margin = new System.Windows.Forms.Padding(4);
             this.cbPeopleSearchFilter.Name = "cbPeopleSearchFilter";
-            this.cbPeopleSearchFilter.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.SparklePurple;
-            this.cbPeopleSearchFilter.Size = new System.Drawing.Size(284, 37);
+            this.cbPeopleSearchFilter.PaletteMode = Krypton.Toolkit.PaletteMode.SparklePurple;
+            this.cbPeopleSearchFilter.Size = new System.Drawing.Size(284, 38);
             this.cbPeopleSearchFilter.StateTracking.Item.Back.Color1 = System.Drawing.Color.BlueViolet;
             this.cbPeopleSearchFilter.StateTracking.Item.Back.Color2 = System.Drawing.Color.BlueViolet;
             this.cbPeopleSearchFilter.StateTracking.Item.Content.ShortText.Color1 = System.Drawing.Color.White;
@@ -146,19 +147,19 @@
             this.lblLoading.TabIndex = 17;
             this.lblLoading.Text = "Loading...";
             // 
-            // btnAddUser
+            // btnAddPerson
             // 
-            this.btnAddUser.BackgroundImage = global::DVLDWinForms___Presentation_Layer.Properties.Resources.add_user;
-            this.btnAddUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnAddUser.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAddUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddUser.Location = new System.Drawing.Point(2484, 134);
-            this.btnAddUser.Margin = new System.Windows.Forms.Padding(4);
-            this.btnAddUser.Name = "btnAddUser";
-            this.btnAddUser.Size = new System.Drawing.Size(52, 50);
-            this.btnAddUser.TabIndex = 16;
-            this.btnAddUser.UseVisualStyleBackColor = true;
-            this.btnAddUser.Click += new System.EventHandler(this.btnAddUser_Click);
+            this.btnAddPerson.BackgroundImage = global::DVLDWinForms___Presentation_Layer.Properties.Resources.add_user;
+            this.btnAddPerson.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAddPerson.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAddPerson.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddPerson.Location = new System.Drawing.Point(2484, 134);
+            this.btnAddPerson.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAddPerson.Name = "btnAddPerson";
+            this.btnAddPerson.Size = new System.Drawing.Size(52, 50);
+            this.btnAddPerson.TabIndex = 16;
+            this.btnAddPerson.UseVisualStyleBackColor = true;
+            this.btnAddPerson.Click += new System.EventHandler(this.btnAddUser_Click);
             // 
             // lblNumberOfPeople
             // 
@@ -215,13 +216,14 @@
             this.dgvPeopleInformation.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dgvPeopleInformation.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvPeopleInformation.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dgvPeopleInformation.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvPeopleInformation.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPeopleInformation.ContextMenuStrip = this.cmsPeople;
             this.dgvPeopleInformation.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dgvPeopleInformation.Location = new System.Drawing.Point(32, 201);
             this.dgvPeopleInformation.Margin = new System.Windows.Forms.Padding(4);
             this.dgvPeopleInformation.Name = "dgvPeopleInformation";
-            this.dgvPeopleInformation.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.SparklePurple;
+            this.dgvPeopleInformation.PaletteMode = Krypton.Toolkit.PaletteMode.SparklePurple;
             this.dgvPeopleInformation.ReadOnly = true;
             this.dgvPeopleInformation.RowHeadersVisible = false;
             this.dgvPeopleInformation.RowHeadersWidth = 82;
@@ -230,7 +232,7 @@
             this.dgvPeopleInformation.Size = new System.Drawing.Size(2504, 1199);
             this.dgvPeopleInformation.StateCommon.Background.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
             this.dgvPeopleInformation.StateCommon.Background.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
-            this.dgvPeopleInformation.StateCommon.BackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.GridBackgroundList;
+            this.dgvPeopleInformation.StateCommon.BackStyle = Krypton.Toolkit.PaletteBackStyle.GridBackgroundList;
             this.dgvPeopleInformation.TabIndex = 0;
             // 
             // cmsPeople
@@ -248,64 +250,64 @@
             this.toolStripSeparator2,
             this.refreshToolStripMenuItem});
             this.cmsPeople.Name = "cmsPeople";
-            this.cmsPeople.Size = new System.Drawing.Size(301, 326);
+            this.cmsPeople.Size = new System.Drawing.Size(244, 282);
             // 
             // addPersonToolStripMenuItem
             // 
             this.addPersonToolStripMenuItem.Name = "addPersonToolStripMenuItem";
-            this.addPersonToolStripMenuItem.Size = new System.Drawing.Size(300, 38);
+            this.addPersonToolStripMenuItem.Size = new System.Drawing.Size(243, 38);
             this.addPersonToolStripMenuItem.Text = "Add";
             this.addPersonToolStripMenuItem.Click += new System.EventHandler(this.addPersonToolStripMenuItem_Click);
             // 
             // showPersonInfoToolStripMenuItem
             // 
             this.showPersonInfoToolStripMenuItem.Name = "showPersonInfoToolStripMenuItem";
-            this.showPersonInfoToolStripMenuItem.Size = new System.Drawing.Size(300, 38);
+            this.showPersonInfoToolStripMenuItem.Size = new System.Drawing.Size(243, 38);
             this.showPersonInfoToolStripMenuItem.Text = "Show";
             this.showPersonInfoToolStripMenuItem.Click += new System.EventHandler(this.showPersonInfoToolStripMenuItem_Click);
             // 
             // updatePersonInfoToolStripMenuItem
             // 
             this.updatePersonInfoToolStripMenuItem.Name = "updatePersonInfoToolStripMenuItem";
-            this.updatePersonInfoToolStripMenuItem.Size = new System.Drawing.Size(300, 38);
+            this.updatePersonInfoToolStripMenuItem.Size = new System.Drawing.Size(243, 38);
             this.updatePersonInfoToolStripMenuItem.Text = "Update";
             this.updatePersonInfoToolStripMenuItem.Click += new System.EventHandler(this.updatePersonInfoToolStripMenuItem_Click);
             // 
             // deleteToolStripMenuItem
             // 
             this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(300, 38);
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(243, 38);
             this.deleteToolStripMenuItem.Text = "Delete";
             this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(297, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(240, 6);
             // 
             // sentEmailToolStripMenuItem
             // 
             this.sentEmailToolStripMenuItem.Name = "sentEmailToolStripMenuItem";
-            this.sentEmailToolStripMenuItem.Size = new System.Drawing.Size(300, 38);
+            this.sentEmailToolStripMenuItem.Size = new System.Drawing.Size(243, 38);
             this.sentEmailToolStripMenuItem.Text = "Send Email";
             this.sentEmailToolStripMenuItem.Click += new System.EventHandler(this.sentEmailToolStripMenuItem_Click);
             // 
             // sendMessageToolStripMenuItem
             // 
             this.sendMessageToolStripMenuItem.Name = "sendMessageToolStripMenuItem";
-            this.sendMessageToolStripMenuItem.Size = new System.Drawing.Size(300, 38);
+            this.sendMessageToolStripMenuItem.Size = new System.Drawing.Size(243, 38);
             this.sendMessageToolStripMenuItem.Text = "Send Message";
             this.sendMessageToolStripMenuItem.Click += new System.EventHandler(this.sendMessageToolStripMenuItem_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(297, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(240, 6);
             // 
             // refreshToolStripMenuItem
             // 
             this.refreshToolStripMenuItem.Name = "refreshToolStripMenuItem";
-            this.refreshToolStripMenuItem.Size = new System.Drawing.Size(300, 38);
+            this.refreshToolStripMenuItem.Size = new System.Drawing.Size(243, 38);
             this.refreshToolStripMenuItem.Text = "Refresh";
             this.refreshToolStripMenuItem.Click += new System.EventHandler(this.refreshToolStripMenuItem_Click);
             // 
@@ -332,14 +334,14 @@
         #endregion
 
         private System.Windows.Forms.Panel MainPanel;
-        private System.Windows.Forms.Button btnAddUser;
+        private System.Windows.Forms.Button btnAddPerson;
         private System.Windows.Forms.Label lblNumberOfPeople;
         private System.Windows.Forms.Label lblRecords;
         private System.Windows.Forms.Label lblFilterBy;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private ComponentFactory.Krypton.Toolkit.KryptonDataGridView dgvPeopleInformation;
+        private Krypton.Toolkit.KryptonDataGridView dgvPeopleInformation;
         private System.Windows.Forms.Label lblLoading;
-        private ComponentFactory.Krypton.Toolkit.KryptonComboBox cbPeopleSearchFilter;
+        private Krypton.Toolkit.KryptonComboBox cbPeopleSearchFilter;
         private System.Windows.Forms.TextBox tbSearch;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ContextMenuStrip cmsPeople;

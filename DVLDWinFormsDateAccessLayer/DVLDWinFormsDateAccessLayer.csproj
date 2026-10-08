@@ -45,9 +45,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="clsApplicationsDataAccessLayer.cs" />
+    <Compile Include="clsApplicationsTypesDataAccessLayer.cs" />
     <Compile Include="clsCountriesDataAccessLayer.cs" />
+    <Compile Include="clsLicenseClassesDataAccessLayer.cs" />
+    <Compile Include="clsLocalLicenseApplicationsViewDataAccessLayer.cs" />
+    <Compile Include="clsLocalLicensesDataAccessLayer.cs" />
     <Compile Include="clsPeopleDataAccessLayer.cs" />
     <Compile Include="clsDataAccessSettings.cs" />
+    <Compile Include="clsTestAppointmentsDataAccessLayer.cs" />
+    <Compile Include="clsTestAppointments_ViewDataAccessLayer.cs" />
+    <Compile Include="clsTestsTypesDataAccessLayer.cs" />
     <Compile Include="clsUsersDataAccessLayer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

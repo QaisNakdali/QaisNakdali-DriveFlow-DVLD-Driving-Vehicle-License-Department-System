@@ -31,13 +31,13 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucAddNewPersonCard));
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.kryptonContextMenu1 = new ComponentFactory.Krypton.Toolkit.KryptonContextMenu();
+            this.kryptonContextMenu1 = new Krypton.Toolkit.KryptonContextMenu();
             this.pnlNewPersonCard = new System.Windows.Forms.Panel();
             this.btnTooltTip = new System.Windows.Forms.PictureBox();
-            this.btnSave = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.btnClear = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.rbFemale = new ComponentFactory.Krypton.Toolkit.KryptonRadioButton();
-            this.rbMale = new ComponentFactory.Krypton.Toolkit.KryptonRadioButton();
+            this.btnSave = new Krypton.Toolkit.KryptonButton();
+            this.btnClear = new Krypton.Toolkit.KryptonButton();
+            this.rbFemale = new Krypton.Toolkit.KryptonRadioButton();
+            this.rbMale = new Krypton.Toolkit.KryptonRadioButton();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
@@ -46,20 +46,20 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.cbCountry = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
-            this.dtpDateOfBirth = new ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker();
-            this.tbAddress = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.tbPhoneNumber = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.tbEmail = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.tbNationalNo = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.cbCountry = new Krypton.Toolkit.KryptonComboBox();
+            this.dtpDateOfBirth = new Krypton.Toolkit.KryptonDateTimePicker();
+            this.tbAddress = new Krypton.Toolkit.KryptonTextBox();
+            this.tbPhoneNumber = new Krypton.Toolkit.KryptonTextBox();
+            this.tbEmail = new Krypton.Toolkit.KryptonTextBox();
+            this.tbNationalNo = new Krypton.Toolkit.KryptonTextBox();
             this.lblLastName = new System.Windows.Forms.Label();
             this.lblThirdName = new System.Windows.Forms.Label();
-            this.tbLastName = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.tbThirdName = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.tbSecondName = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.tbLastName = new Krypton.Toolkit.KryptonTextBox();
+            this.tbThirdName = new Krypton.Toolkit.KryptonTextBox();
+            this.tbSecondName = new Krypton.Toolkit.KryptonTextBox();
             this.lblSecondName = new System.Windows.Forms.Label();
             this.lblFirstName = new System.Windows.Forms.Label();
-            this.tbFirstName = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.tbFirstName = new Krypton.Toolkit.KryptonTextBox();
             this.lblPhoneNumber = new System.Windows.Forms.Label();
             this.lblCountry = new System.Windows.Forms.Label();
             this.lblDOB = new System.Windows.Forms.Label();
@@ -72,7 +72,6 @@
             this.btnReomvePicture = new System.Windows.Forms.PictureBox();
             this.btnChangePicture = new System.Windows.Forms.PictureBox();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.pbProfilePicture = new DVLDWinForms___Presentation_Layer.ucCircularPictureBox();
             this.pnlNewPersonCard.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnTooltTip)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -157,49 +156,49 @@
             this.btnSave.Name = "btnSave";
             this.btnSave.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(90)))), ((int)(((byte)(230)))));
             this.btnSave.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(120)))), ((int)(((byte)(245)))));
-            this.btnSave.OverrideDefault.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnSave.OverrideDefault.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.btnSave.OverrideDefault.Border.Rounding = 25;
             this.btnSave.OverrideDefault.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.btnSave.OverrideDefault.Content.ShortText.Font = new System.Drawing.Font("Cambria", 10.125F);
             this.btnSave.Size = new System.Drawing.Size(155, 57);
             this.btnSave.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(90)))), ((int)(((byte)(230)))));
             this.btnSave.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(120)))), ((int)(((byte)(245)))));
-            this.btnSave.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnSave.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.btnSave.StateCommon.Border.Rounding = 25;
             this.btnSave.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.btnSave.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Cambria", 10.125F);
             this.btnSave.StateDisabled.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(90)))), ((int)(((byte)(230)))));
             this.btnSave.StateDisabled.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(120)))), ((int)(((byte)(245)))));
-            this.btnSave.StateDisabled.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnSave.StateDisabled.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.btnSave.StateDisabled.Border.Rounding = 25;
             this.btnSave.StateDisabled.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.btnSave.StateDisabled.Content.ShortText.Font = new System.Drawing.Font("Cambria", 10.125F);
             this.btnSave.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(90)))), ((int)(((byte)(230)))));
             this.btnSave.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(120)))), ((int)(((byte)(245)))));
-            this.btnSave.StateNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnSave.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.btnSave.StateNormal.Border.Rounding = 25;
             this.btnSave.StateNormal.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.btnSave.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Cambria", 10.125F);
             this.btnSave.StatePressed.Back.Color1 = System.Drawing.Color.White;
             this.btnSave.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(181)))), ((int)(((byte)(182)))));
-            this.btnSave.StatePressed.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnSave.StatePressed.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.btnSave.StatePressed.Border.Rounding = 25;
             this.btnSave.StatePressed.Content.ShortText.Font = new System.Drawing.Font("Cambria", 10.125F);
             this.btnSave.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(90)))), ((int)(((byte)(230)))));
             this.btnSave.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(120)))), ((int)(((byte)(245)))));
-            this.btnSave.StateTracking.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnSave.StateTracking.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.btnSave.StateTracking.Border.Rounding = 25;
             this.btnSave.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.btnSave.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Cambria", 10.125F);
@@ -214,50 +213,50 @@
             this.btnClear.Name = "btnClear";
             this.btnClear.OverrideDefault.Back.Color1 = System.Drawing.Color.White;
             this.btnClear.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(181)))), ((int)(((byte)(182)))));
-            this.btnClear.OverrideDefault.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnClear.OverrideDefault.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.btnClear.OverrideDefault.Border.Rounding = 25;
             this.btnClear.OverrideDefault.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.btnClear.OverrideDefault.Content.ShortText.Font = new System.Drawing.Font("Cambria", 10.125F);
             this.btnClear.Size = new System.Drawing.Size(155, 57);
             this.btnClear.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.btnClear.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(181)))), ((int)(((byte)(182)))));
-            this.btnClear.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnClear.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.btnClear.StateCommon.Border.Rounding = 25;
             this.btnClear.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.btnClear.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Cambria", 10.125F);
             this.btnClear.StateDisabled.Back.Color1 = System.Drawing.Color.White;
             this.btnClear.StateDisabled.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(181)))), ((int)(((byte)(182)))));
-            this.btnClear.StateDisabled.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnClear.StateDisabled.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.btnClear.StateDisabled.Border.Rounding = 25;
             this.btnClear.StateDisabled.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.btnClear.StateDisabled.Content.ShortText.Font = new System.Drawing.Font("Cambria", 10.125F);
             this.btnClear.StateNormal.Back.Color1 = System.Drawing.Color.White;
             this.btnClear.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(181)))), ((int)(((byte)(182)))));
-            this.btnClear.StateNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnClear.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.btnClear.StateNormal.Border.Rounding = 25;
             this.btnClear.StateNormal.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.btnClear.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Cambria", 10.125F);
             this.btnClear.StatePressed.Back.Color1 = System.Drawing.Color.White;
             this.btnClear.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(181)))), ((int)(((byte)(182)))));
-            this.btnClear.StatePressed.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnClear.StatePressed.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.btnClear.StatePressed.Border.Rounding = 25;
             this.btnClear.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.btnClear.StatePressed.Content.ShortText.Font = new System.Drawing.Font("Cambria", 10.125F);
             this.btnClear.StateTracking.Back.Color1 = System.Drawing.Color.White;
             this.btnClear.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(181)))), ((int)(((byte)(182)))));
-            this.btnClear.StateTracking.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnClear.StateTracking.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.btnClear.StateTracking.Border.Rounding = 25;
             this.btnClear.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.btnClear.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Cambria", 10.125F);
@@ -270,7 +269,7 @@
             this.rbFemale.Cursor = System.Windows.Forms.Cursors.Hand;
             this.rbFemale.Location = new System.Drawing.Point(671, 253);
             this.rbFemale.Name = "rbFemale";
-            this.rbFemale.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.SparklePurple;
+            this.rbFemale.PaletteMode = Krypton.Toolkit.PaletteMode.SparklePurple;
             this.rbFemale.Size = new System.Drawing.Size(132, 38);
             this.rbFemale.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(183)))), ((int)(((byte)(182)))));
             this.rbFemale.StateCommon.ShortText.Font = new System.Drawing.Font("Cambria", 10.125F);
@@ -288,7 +287,7 @@
             this.rbMale.Cursor = System.Windows.Forms.Cursors.Hand;
             this.rbMale.Location = new System.Drawing.Point(413, 253);
             this.rbMale.Name = "rbMale";
-            this.rbMale.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.SparklePurple;
+            this.rbMale.PaletteMode = Krypton.Toolkit.PaletteMode.SparklePurple;
             this.rbMale.Size = new System.Drawing.Size(103, 38);
             this.rbMale.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(183)))), ((int)(((byte)(182)))));
             this.rbMale.StateCommon.ShortText.Font = new System.Drawing.Font("Cambria", 10.125F);
@@ -386,19 +385,19 @@
             this.cbCountry.DropDownWidth = 236;
             this.cbCountry.Location = new System.Drawing.Point(1223, 232);
             this.cbCountry.Name = "cbCountry";
-            this.cbCountry.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.SparklePurple;
+            this.cbCountry.PaletteMode = Krypton.Toolkit.PaletteMode.SparklePurple;
             this.cbCountry.Size = new System.Drawing.Size(252, 53);
-            this.cbCountry.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.cbCountry.StateCommon.ComboBox.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.cbCountry.StateCommon.ComboBox.Border.Rounding = 25;
-            this.cbCountry.StateDisabled.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.cbCountry.StateDisabled.ComboBox.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.cbCountry.StateDisabled.ComboBox.Border.Rounding = 25;
-            this.cbCountry.StateNormal.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.cbCountry.StateNormal.ComboBox.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.cbCountry.StateNormal.ComboBox.Border.Rounding = 25;
             this.cbCountry.TabIndex = 9;
             this.cbCountry.Text = "Saudi Arabia";
@@ -409,19 +408,19 @@
             this.dtpDateOfBirth.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpDateOfBirth.Location = new System.Drawing.Point(1223, 142);
             this.dtpDateOfBirth.Name = "dtpDateOfBirth";
-            this.dtpDateOfBirth.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.SparklePurple;
+            this.dtpDateOfBirth.PaletteMode = Krypton.Toolkit.PaletteMode.SparklePurple;
             this.dtpDateOfBirth.Size = new System.Drawing.Size(252, 53);
-            this.dtpDateOfBirth.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.dtpDateOfBirth.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.dtpDateOfBirth.StateCommon.Border.Rounding = 25;
-            this.dtpDateOfBirth.StateDisabled.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.dtpDateOfBirth.StateDisabled.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.dtpDateOfBirth.StateDisabled.Border.Rounding = 25;
-            this.dtpDateOfBirth.StateNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.dtpDateOfBirth.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.dtpDateOfBirth.StateNormal.Border.Rounding = 25;
             this.dtpDateOfBirth.TabIndex = 6;
             // 
@@ -431,11 +430,11 @@
             this.tbAddress.MaxLength = 500;
             this.tbAddress.Multiline = true;
             this.tbAddress.Name = "tbAddress";
-            this.tbAddress.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.SparklePurple;
+            this.tbAddress.PaletteMode = Krypton.Toolkit.PaletteMode.SparklePurple;
             this.tbAddress.Size = new System.Drawing.Size(547, 184);
-            this.tbAddress.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.tbAddress.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.tbAddress.StateCommon.Border.Rounding = 25;
             this.tbAddress.TabIndex = 12;
             this.tbAddress.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -445,11 +444,11 @@
             this.tbPhoneNumber.Location = new System.Drawing.Point(338, 419);
             this.tbPhoneNumber.MaxLength = 15;
             this.tbPhoneNumber.Name = "tbPhoneNumber";
-            this.tbPhoneNumber.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.SparklePurple;
+            this.tbPhoneNumber.PaletteMode = Krypton.Toolkit.PaletteMode.SparklePurple;
             this.tbPhoneNumber.Size = new System.Drawing.Size(547, 55);
-            this.tbPhoneNumber.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.tbPhoneNumber.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.tbPhoneNumber.StateCommon.Border.Rounding = 25;
             this.tbPhoneNumber.TabIndex = 11;
             this.tbPhoneNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -461,11 +460,11 @@
             this.tbEmail.Location = new System.Drawing.Point(338, 332);
             this.tbEmail.MaxLength = 100;
             this.tbEmail.Name = "tbEmail";
-            this.tbEmail.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.SparklePurple;
+            this.tbEmail.PaletteMode = Krypton.Toolkit.PaletteMode.SparklePurple;
             this.tbEmail.Size = new System.Drawing.Size(547, 55);
-            this.tbEmail.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.tbEmail.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.tbEmail.StateCommon.Border.Rounding = 25;
             this.tbEmail.TabIndex = 10;
             this.tbEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -476,11 +475,11 @@
             this.tbNationalNo.Location = new System.Drawing.Point(338, 152);
             this.tbNationalNo.MaxLength = 12;
             this.tbNationalNo.Name = "tbNationalNo";
-            this.tbNationalNo.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.SparklePurple;
+            this.tbNationalNo.PaletteMode = Krypton.Toolkit.PaletteMode.SparklePurple;
             this.tbNationalNo.Size = new System.Drawing.Size(547, 55);
-            this.tbNationalNo.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.tbNationalNo.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.tbNationalNo.StateCommon.Border.Rounding = 25;
             this.tbNationalNo.TabIndex = 5;
             this.tbNationalNo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -517,11 +516,11 @@
             this.tbLastName.Location = new System.Drawing.Point(1223, 62);
             this.tbLastName.MaxLength = 25;
             this.tbLastName.Name = "tbLastName";
-            this.tbLastName.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.SparklePurple;
+            this.tbLastName.PaletteMode = Krypton.Toolkit.PaletteMode.SparklePurple;
             this.tbLastName.Size = new System.Drawing.Size(252, 55);
-            this.tbLastName.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.tbLastName.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.tbLastName.StateCommon.Border.Rounding = 25;
             this.tbLastName.TabIndex = 4;
             this.tbLastName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -532,11 +531,11 @@
             this.tbThirdName.Location = new System.Drawing.Point(928, 62);
             this.tbThirdName.MaxLength = 25;
             this.tbThirdName.Name = "tbThirdName";
-            this.tbThirdName.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.SparklePurple;
+            this.tbThirdName.PaletteMode = Krypton.Toolkit.PaletteMode.SparklePurple;
             this.tbThirdName.Size = new System.Drawing.Size(252, 55);
-            this.tbThirdName.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.tbThirdName.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.tbThirdName.StateCommon.Border.Rounding = 25;
             this.tbThirdName.TabIndex = 3;
             this.tbThirdName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -547,11 +546,11 @@
             this.tbSecondName.Location = new System.Drawing.Point(633, 62);
             this.tbSecondName.MaxLength = 25;
             this.tbSecondName.Name = "tbSecondName";
-            this.tbSecondName.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.SparklePurple;
+            this.tbSecondName.PaletteMode = Krypton.Toolkit.PaletteMode.SparklePurple;
             this.tbSecondName.Size = new System.Drawing.Size(252, 55);
-            this.tbSecondName.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.tbSecondName.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.tbSecondName.StateCommon.Border.Rounding = 25;
             this.tbSecondName.TabIndex = 2;
             this.tbSecondName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -586,11 +585,11 @@
             this.tbFirstName.Location = new System.Drawing.Point(338, 62);
             this.tbFirstName.MaxLength = 25;
             this.tbFirstName.Name = "tbFirstName";
-            this.tbFirstName.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.SparklePurple;
+            this.tbFirstName.PaletteMode = Krypton.Toolkit.PaletteMode.SparklePurple;
             this.tbFirstName.Size = new System.Drawing.Size(252, 55);
-            this.tbFirstName.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.tbFirstName.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.tbFirstName.StateCommon.Border.Rounding = 25;
             this.tbFirstName.TabIndex = 1;
             this.tbFirstName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -694,7 +693,6 @@
             // 
             // pnlPictureContainer
             // 
-            this.pnlPictureContainer.Controls.Add(this.pbProfilePicture);
             this.pnlPictureContainer.Controls.Add(this.btnReomvePicture);
             this.pnlPictureContainer.Controls.Add(this.btnChangePicture);
             this.pnlPictureContainer.Location = new System.Drawing.Point(935, 315);
@@ -731,14 +729,6 @@
             this.errorProvider1.ContainerControl = this;
             this.errorProvider1.Icon = ((System.Drawing.Icon)(resources.GetObject("errorProvider1.Icon")));
             // 
-            // pbProfilePicture
-            // 
-            this.pbProfilePicture.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.pbProfilePicture.Location = new System.Drawing.Point(55, 17);
-            this.pbProfilePicture.Name = "pbProfilePicture";
-            this.pbProfilePicture.Size = new System.Drawing.Size(150, 150);
-            this.pbProfilePicture.TabIndex = 102;
-            // 
             // ucAddNewPersonCard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -769,9 +759,9 @@
 
         #endregion
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private ComponentFactory.Krypton.Toolkit.KryptonContextMenu kryptonContextMenu1;
+        private Krypton.Toolkit.KryptonContextMenu kryptonContextMenu1;
         private System.Windows.Forms.Panel pnlNewPersonCard;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox tbFirstName;
+        private Krypton.Toolkit.KryptonTextBox tbFirstName;
         private System.Windows.Forms.Label lblPhoneNumber;
         private System.Windows.Forms.Label lblCountry;
         private System.Windows.Forms.Label lblDOB;
@@ -782,17 +772,17 @@
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Label lblSecondName;
         private System.Windows.Forms.Label lblFirstName;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox tbEmail;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox tbNationalNo;
+        private Krypton.Toolkit.KryptonTextBox tbEmail;
+        private Krypton.Toolkit.KryptonTextBox tbNationalNo;
         private System.Windows.Forms.Label lblLastName;
         private System.Windows.Forms.Label lblThirdName;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox tbLastName;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox tbThirdName;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox tbSecondName;
-        private ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker dtpDateOfBirth;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox tbAddress;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox tbPhoneNumber;
-        private ComponentFactory.Krypton.Toolkit.KryptonComboBox cbCountry;
+        private Krypton.Toolkit.KryptonTextBox tbLastName;
+        private Krypton.Toolkit.KryptonTextBox tbThirdName;
+        private Krypton.Toolkit.KryptonTextBox tbSecondName;
+        private Krypton.Toolkit.KryptonDateTimePicker dtpDateOfBirth;
+        private Krypton.Toolkit.KryptonTextBox tbAddress;
+        private Krypton.Toolkit.KryptonTextBox tbPhoneNumber;
+        private Krypton.Toolkit.KryptonComboBox cbCountry;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox8;
@@ -801,15 +791,14 @@
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private ComponentFactory.Krypton.Toolkit.KryptonRadioButton rbMale;
-        private ComponentFactory.Krypton.Toolkit.KryptonRadioButton rbFemale;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton btnClear;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton btnSave;
+        private Krypton.Toolkit.KryptonRadioButton rbMale;
+        private Krypton.Toolkit.KryptonRadioButton rbFemale;
+        private Krypton.Toolkit.KryptonButton btnClear;
+        private Krypton.Toolkit.KryptonButton btnSave;
         private System.Windows.Forms.PictureBox btnChangePicture;
         private System.Windows.Forms.PictureBox btnReomvePicture;
         private System.Windows.Forms.Panel pnlPictureContainer;
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.PictureBox btnTooltTip;
-        private ucCircularPictureBox pbProfilePicture;
     }
 }

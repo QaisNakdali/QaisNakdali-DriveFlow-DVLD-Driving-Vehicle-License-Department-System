@@ -13,16 +13,25 @@ namespace DVLDWinForms___Presentation_Layer
 {
     public partial class ucShowPersonInfoCard : UserControl
     {
-        public ucShowPersonInfoCard(int PersonId)
+        public delegate void PersonNotFoundEventHandler(object sender, bool IsNotFound = true);
+
+        public event PersonNotFoundEventHandler IsNotFound;
+
+        public ucShowPersonInfoCard()
         {
             InitializeComponent();
-            pbProfilePicture.Mode = ucCircularPictureBox.PictureMode.Large;
+            //pbProfilePicture.Mode = ucCircularPictureBox.PictureMode.Large;
             SetUpToolTip();
+        }
+
+        public void LoadPerson(int PersonId)
+        {
             _PersonID = PersonId;
             FillPersonInfoCard();
         }
 
         private int _PersonID;
+
         private void SetUpToolTip()
         {
             ToolTip tooltip1 = new ToolTip();
@@ -37,7 +46,6 @@ namespace DVLDWinForms___Presentation_Layer
         private clsPerson GetPersonInfo()
         {
             clsPerson Person = clsPerson.FindbyID(_PersonID);
-            if (Person == null) throw new Exception("Person Is Not Found!");
             return Person;
         }
 
@@ -48,9 +56,28 @@ namespace DVLDWinForms___Presentation_Layer
             return Country.CountryName;
         }
 
+        //private void FillPersonNotFoundCard()
+        //{
+        //    lblName.Text = "[???]";
+        //    lblNationalNo.Text = "[???]";
+        //    lblGender.Text = "[???]";
+        //    lblEmail.Text = "[???]";
+        //    lblPhoneNumber.Text = "[???]";
+        //    lblAddress.Text = "[???]";
+        //    lblDateOfBirth.Text = "[???]";
+        //    //pbProfilePicture.SetDefualtProfilePicture(false);
+        //    lblCountry.Text = "[???]";
+        //}
         private void FillPersonInfoCard()
         {
             clsPerson Person = GetPersonInfo();
+
+            if (Person == null)
+            {
+                IsNotFound?.Invoke(this, true);
+                return;
+            }
+
 
             lblName.Text = Person.FullName();
             lblNationalNo.Text = Person.NationalNo;
@@ -61,15 +88,16 @@ namespace DVLDWinForms___Presentation_Layer
             lblDateOfBirth.Text = Person.DateOfBirth.ToShortDateString();
             if (Person.Gender == "Male")
             {
-                pbProfilePicture.SetDefualtProfilePicture(false);
+                //pbProfilePicture.SetDefualtProfilePicture(false);
             }
             else
             {
-                pbProfilePicture.SetDefualtProfilePicture(true);
+                //pbProfilePicture.SetDefualtProfilePicture(true);
             }
             lblCountry.Text = GetCountryName(Person.NationalityCountryID);
-            if (!string.IsNullOrEmpty(Person.ImagePath))
-               pbProfilePicture.SetCustomProfilePicture(Person.ImagePath);
+            //if (!string.IsNullOrEmpty(Person.ImagePath))
+            //pbProfilePicture.SetCustomProfilePicture(Person.ImagePath);
+            IsNotFound?.Invoke(this, false);
         }
     }
 }

@@ -8,7 +8,7 @@ using System.Runtime.Remoting.Channels;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using ComponentFactory.Krypton.Toolkit;
+using Krypton.Toolkit;
 using DVLDWinFormsBusinessLayer;
 using System.IO;
 using static System.Net.Mime.MediaTypeNames;
@@ -34,7 +34,7 @@ namespace DVLDWinForms___Presentation_Layer
         {
             InitializeComponent();
 
-            pbProfilePicture.Mode = ucCircularPictureBox.PictureMode.Large;
+            //pbProfilePicture.Mode = ucCircularPictureBox.PictureMode.Large;
             GetCountries();
             NoUnder18YearsPeople();
             SetUpToolTip();
@@ -98,7 +98,7 @@ namespace DVLDWinForms___Presentation_Layer
             cbCountry.Text = GetCountryName(Person.NationalityCountryID);
             if (!string.IsNullOrEmpty(Person.ImagePath))
             {
-                pbProfilePicture.SetCustomProfilePicture(Person.ImagePath);
+                //pbProfilePicture.SetCustomProfilePicture(Person.ImagePath);
                 btnReomvePicture.Visible = true;
                 _OldImagePath = Person.ImagePath;
             }
@@ -276,8 +276,14 @@ namespace DVLDWinForms___Presentation_Layer
 
             if (Person1.Save())
             {
-                
-                MessageBox.Show("Person Added Successfully!","Add New Person",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                if (_IsUpdateMode)
+                {
+                    MessageBox.Show("Person Updated Successfully!", "Update Person Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Person Added Successfully!", "Add New Person", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
                 _PersonID = Person1.PersonID;
 
                 if (_IsUpdateMode && _OldImagePath != _CurrentImagePath)
@@ -300,7 +306,7 @@ namespace DVLDWinForms___Presentation_Layer
                 return;
 
   
-            pbProfilePicture.SetDefualtProfilePicture(false);
+            //pbProfilePicture.SetDefualtProfilePicture(false);
             btnReomvePicture.Visible = false;
         }
 
@@ -310,7 +316,7 @@ namespace DVLDWinForms___Presentation_Layer
                 return;
 
             
-            pbProfilePicture.SetDefualtProfilePicture(true);
+            //pbProfilePicture.SetDefualtProfilePicture(true);
             btnReomvePicture.Visible = false;
         }
 
@@ -411,7 +417,7 @@ namespace DVLDWinForms___Presentation_Layer
 
             if (ofd.ShowDialog() == DialogResult.OK)
             {
-                pbProfilePicture.SetCustomProfilePicture(ofd.FileName);
+                //pbProfilePicture.SetCustomProfilePicture(ofd.FileName);
                 _CurrentImagePath = ofd.FileName;
                 btnReomvePicture.Visible = true;
             }
@@ -440,10 +446,10 @@ namespace DVLDWinForms___Presentation_Layer
             switch (GetGender())
             {
                 case "Female":
-                    pbProfilePicture.SetDefualtProfilePicture(true);
+                   // pbProfilePicture.SetDefualtProfilePicture(true);
                     break;
                 default:
-                    pbProfilePicture.SetDefualtProfilePicture(false);
+                    //pbProfilePicture.SetDefualtProfilePicture(false);
                     break;
 
             }

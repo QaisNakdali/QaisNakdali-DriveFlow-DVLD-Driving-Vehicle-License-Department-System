@@ -268,5 +268,39 @@ namespace DVLDWinFormsDateAccessLayer
 
             return IsFound;
         }
+
+        public static bool IsUserExist(string Username)
+        {
+            bool IsFound = false;
+
+            SqlConnection Connection = new SqlConnection(clsDataAccessSettings.ConnectionString);
+
+            string Query = "Select Found = 1 from Users where Username = @Username";
+
+            SqlCommand Command = new SqlCommand(Query, Connection);
+
+            Command.Parameters.AddWithValue("@Username", Username);
+
+            try
+            {
+                Connection.Open();
+                SqlDataReader Reader = Command.ExecuteReader();
+
+                IsFound = Reader.HasRows;
+
+                Reader.Close();
+
+            }
+            catch (Exception ex)
+            {
+
+            }
+            finally
+            {
+                Connection.Close();
+            }
+
+            return IsFound;
+        }
     }
 }

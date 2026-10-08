@@ -4,12 +4,13 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace DVLDWinForms___Presentation_Layer
 {
     static public class UtilityClass
     {
-        static public DataRow[] FilterDataTableByCondition(DataTable dt, string itemname, string condition)
+        static public DataRow[] FilterPeopleDataTableByCondition(DataTable dt, string itemname, string condition)
         {
             
             switch(itemname)
@@ -54,5 +55,67 @@ namespace DVLDWinForms___Presentation_Layer
                     return null;
             }
         }
-    }
+
+        static public DataRow[] FilterUsersDataTableByCondition(DataTable dt, string itemname, string condition)
+        {
+
+            switch (itemname)
+            {
+                case "User ID":
+                    if (int.TryParse(condition, out int UserID))
+                    {
+                        return dt.Select($"UserID={UserID}");
+                    }
+                    else
+                    {
+                        return new DataRow[0];
+                    }
+                case "Person ID":
+                    if (int.TryParse(condition, out int PersonID))
+                    {
+                        return dt.Select($"PersonID={PersonID}");
+                    }
+                    else
+                    {
+                        return new DataRow[0];
+                    }
+
+                case "Full Name":
+                    return dt.Select($"FullName='{condition}'");
+                case "Username":
+                    return dt.Select($"Username='{condition}'");
+                case "Is Active":
+                    return dt.Select($"IsActive='{condition}'");
+                default:
+                    return null;
+            }
+        }
+        static public DataRow[] FilterLocalLicensesDataTableByCondition(DataTable dt, string itemname, string condition)
+        {
+
+            switch (itemname)
+            {
+                case "Local License ID":
+                    if (int.TryParse(condition, out int LocalLicenseID))
+                    {
+                        return dt.Select($"LocalDrivingLicenseApplicationID={LocalLicenseID}");
+                    }
+                    else
+                    {
+                        return new DataRow[0];
+                    }
+
+                case "Full Name":
+                    return dt.Select($"FullName='{condition}'");
+                case "Class Name":
+                    return dt.Select($"ClassName='{condition}'");
+                case "National NO":
+                    return dt.Select($"NationalNO='{condition}'");
+                case "Status":
+                    return dt.Select($"Status='{condition}'");
+                default:
+                    return null;
+            }
+        }
+        }
 }

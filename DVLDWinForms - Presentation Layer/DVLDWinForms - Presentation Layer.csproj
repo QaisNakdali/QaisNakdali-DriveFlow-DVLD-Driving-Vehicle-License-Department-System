@@ -33,27 +33,28 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ComponentFactory.Krypton.Docking">
-      <HintPath>..\..\..\..\Downloads\Krypton-master\Krypton-master\Bin\ComponentFactory.Krypton.Docking.dll</HintPath>
-    </Reference>
-    <Reference Include="ComponentFactory.Krypton.Navigator">
-      <HintPath>..\..\..\..\Downloads\Krypton-master\Krypton-master\Bin\ComponentFactory.Krypton.Navigator.dll</HintPath>
-    </Reference>
-    <Reference Include="ComponentFactory.Krypton.Ribbon">
-      <HintPath>..\..\..\..\Downloads\Krypton-master\Krypton-master\Bin\ComponentFactory.Krypton.Ribbon.dll</HintPath>
-    </Reference>
-    <Reference Include="ComponentFactory.Krypton.Toolkit">
-      <HintPath>..\..\..\..\Downloads\Krypton-master\Krypton-master\Bin\ComponentFactory.Krypton.Toolkit.dll</HintPath>
-    </Reference>
-    <Reference Include="ComponentFactory.Krypton.Workspace">
-      <HintPath>..\..\..\..\Downloads\Krypton-master\Krypton-master\Bin\ComponentFactory.Krypton.Workspace.dll</HintPath>
+    <Reference Include="Krypton.Toolkit, Version=100.26.1.19, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Krypton.Toolkit.100.26.1.19\lib\net472\Krypton.Toolkit.dll</HintPath>
     </Reference>
     <Reference Include="MaterialSkin, Version=2.3.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>packages\MaterialSkin.2.2.3.1\lib\net461\MaterialSkin.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.3\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -73,11 +74,35 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmLicenseDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLicenseDetails.Designer.cs">
+      <DependentUpon>frmLicenseDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNewTestAppointment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNewTestAppointment.Designer.cs">
+      <DependentUpon>frmNewTestAppointment.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPersonDetails.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmPersonDetails.Designer.cs">
       <DependentUpon>frmPersonDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUserDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUserDetails.Designer.cs">
+      <DependentUpon>frmUserDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVisionTestAppointments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVisionTestAppointments.Designer.cs">
+      <DependentUpon>frmVisionTestAppointments.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -86,11 +111,53 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="ucAddNewLocalLicense.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucAddNewLocalLicense.Designer.cs">
+      <DependentUpon>ucAddNewLocalLicense.cs</DependentUpon>
+    </Compile>
     <Compile Include="ucAddNewPersonCard.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="ucAddNewPersonCard.Designer.cs">
       <DependentUpon>ucAddNewPersonCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucAddNewTest.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucAddNewTest.Designer.cs">
+      <DependentUpon>ucAddNewTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucAddNewUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucAddNewUser.Designer.cs">
+      <DependentUpon>ucAddNewUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucApplications.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucApplications.Designer.cs">
+      <DependentUpon>ucApplications.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucApplicationsInfoShort.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucApplicationsInfoShort.Designer.cs">
+      <DependentUpon>ucApplicationsInfoShort.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucApplicationsTypes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucApplicationsTypes.Designer.cs">
+      <DependentUpon>ucApplicationsTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucChangePassword.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucChangePassword.Designer.cs">
+      <DependentUpon>ucChangePassword.cs</DependentUpon>
     </Compile>
     <Compile Include="ucCircularPictureBox.cs">
       <SubType>UserControl</SubType>
@@ -104,11 +171,65 @@
     <Compile Include="ucComingSoon.Designer.cs">
       <DependentUpon>ucComingSoon.cs</DependentUpon>
     </Compile>
+    <Compile Include="ucDrivingLicenseInfoShort.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucDrivingLicenseInfoShort.Designer.cs">
+      <DependentUpon>ucDrivingLicenseInfoShort.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucDrivingLicensesServicesScreen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucDrivingLicensesServicesScreen.Designer.cs">
+      <DependentUpon>ucDrivingLicensesServicesScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucHomeScreen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucHomeScreen.Designer.cs">
+      <DependentUpon>ucHomeScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucLocalLicensesManagement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucLocalLicensesManagement.Designer.cs">
+      <DependentUpon>ucLocalLicensesManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucManageApplicationsScreen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucManageApplicationsScreen.Designer.cs">
+      <DependentUpon>ucManageApplicationsScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="ucPeopleScreen.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="ucPeopleScreen.Designer.cs">
       <DependentUpon>ucPeopleScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucPeopleSearch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucPeopleSearch.Designer.cs">
+      <DependentUpon>ucPeopleSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucRetakeTest.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucRetakeTest.Designer.cs">
+      <DependentUpon>ucRetakeTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucSettingsScreen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucSettingsScreen.Designer.cs">
+      <DependentUpon>ucSettingsScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucShowDrivingLicenseInfoCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucShowDrivingLicenseInfoCard.Designer.cs">
+      <DependentUpon>ucShowDrivingLicenseInfoCard.cs</DependentUpon>
     </Compile>
     <Compile Include="ucShowPersonInfoCard.cs">
       <SubType>UserControl</SubType>
@@ -116,26 +237,77 @@
     <Compile Include="ucShowPersonInfoCard.Designer.cs">
       <DependentUpon>ucShowPersonInfoCard.cs</DependentUpon>
     </Compile>
+    <Compile Include="ucShowUserInfoCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucShowUserInfoCard.Designer.cs">
+      <DependentUpon>ucShowUserInfoCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucTestTypes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucTestTypes.Designer.cs">
+      <DependentUpon>ucTestTypes.cs</DependentUpon>
+    </Compile>
     <Compile Include="ucUpperBar.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="ucUpperBar.Designer.cs">
       <DependentUpon>ucUpperBar.cs</DependentUpon>
     </Compile>
+    <Compile Include="ucUsersScreen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucUsersScreen.Designer.cs">
+      <DependentUpon>ucUsersScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="UtilityClass.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmLicenseDetails.resx">
+      <DependentUpon>frmLicenseDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNewTestAppointment.resx">
+      <DependentUpon>frmNewTestAppointment.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmPersonDetails.resx">
       <DependentUpon>frmPersonDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUserDetails.resx">
+      <DependentUpon>frmUserDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVisionTestAppointments.resx">
+      <DependentUpon>frmVisionTestAppointments.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="ucAddNewLocalLicense.resx">
+      <DependentUpon>ucAddNewLocalLicense.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ucAddNewPersonCard.resx">
       <DependentUpon>ucAddNewPersonCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucAddNewTest.resx">
+      <DependentUpon>ucAddNewTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucAddNewUser.resx">
+      <DependentUpon>ucAddNewUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucApplications.resx">
+      <DependentUpon>ucApplications.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucApplicationsInfoShort.resx">
+      <DependentUpon>ucApplicationsInfoShort.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucApplicationsTypes.resx">
+      <DependentUpon>ucApplicationsTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucChangePassword.resx">
+      <DependentUpon>ucChangePassword.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ucCircularPictureBox.resx">
       <DependentUpon>ucCircularPictureBox.cs</DependentUpon>
@@ -143,14 +315,50 @@
     <EmbeddedResource Include="ucComingSoon.resx">
       <DependentUpon>ucComingSoon.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ucDrivingLicenseInfoShort.resx">
+      <DependentUpon>ucDrivingLicenseInfoShort.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucDrivingLicensesServicesScreen.resx">
+      <DependentUpon>ucDrivingLicensesServicesScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucHomeScreen.resx">
+      <DependentUpon>ucHomeScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucLocalLicensesManagement.resx">
+      <DependentUpon>ucLocalLicensesManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucManageApplicationsScreen.resx">
+      <DependentUpon>ucManageApplicationsScreen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ucPeopleScreen.resx">
       <DependentUpon>ucPeopleScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucPeopleSearch.resx">
+      <DependentUpon>ucPeopleSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucRetakeTest.resx">
+      <DependentUpon>ucRetakeTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucSettingsScreen.resx">
+      <DependentUpon>ucSettingsScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucShowDrivingLicenseInfoCard.resx">
+      <DependentUpon>ucShowDrivingLicenseInfoCard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ucShowPersonInfoCard.resx">
       <DependentUpon>ucShowPersonInfoCard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ucShowUserInfoCard.resx">
+      <DependentUpon>ucShowUserInfoCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucTestTypes.resx">
+      <DependentUpon>ucTestTypes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ucUpperBar.resx">
       <DependentUpon>ucUpperBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucUsersScreen.resx">
+      <DependentUpon>ucUsersScreen.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -264,6 +472,75 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\coming-soon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\multi-users.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\multi-users %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-user %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search-user %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-avatar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-user %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TicTacToe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diploma.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hashtags.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diploma1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hashtag %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\driver-license %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stamp %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\license.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new-features.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye-test.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Copilot_20260707_144450.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Copilot_20260707_142928.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled design %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled design %282%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

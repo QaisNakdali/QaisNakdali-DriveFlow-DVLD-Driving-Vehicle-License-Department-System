@@ -50,6 +50,7 @@ namespace DVLDWinForms___Presentation_Layer
             else
             {
                 tbSearch.Visible = true;
+                tbSearch.Clear();
             }
         }
 
@@ -71,7 +72,7 @@ namespace DVLDWinForms___Presentation_Layer
                 return;
             }
 
-            DataRow[] dr = UtilityClass.FilterDataTableByCondition(_PeopleTable, cbPeopleSearchFilter.Text, tbSearch.Text);
+            DataRow[] dr = UtilityClass.FilterPeopleDataTableByCondition(_PeopleTable, cbPeopleSearchFilter.Text, tbSearch.Text);
 
             dgvPeopleInformation.DataSource = (dr!=null && dr.Length > 0)? dr.CopyToDataTable() : _PeopleTable;
         }
@@ -94,7 +95,7 @@ namespace DVLDWinForms___Presentation_Layer
 
         private void btnAddUser_Click(object sender, EventArgs e)
         {
-            frmPersonDetails AddNewPersonForm = new frmPersonDetails(frmPersonDetails.enMode.Add, -1);
+            frmPersonDetails AddNewPersonForm = new frmPersonDetails(frmPersonDetails.enPersonMode.Add, -1);
 
             AddNewPersonForm.RefreshData += frmPersonDetails_RefreshData;
 
@@ -136,7 +137,7 @@ namespace DVLDWinForms___Presentation_Layer
                 return;
             }
 
-            frmPersonDetails ShowPersonInfo = new frmPersonDetails(frmPersonDetails.enMode.Show, PersonId);
+            frmPersonDetails ShowPersonInfo = new frmPersonDetails(frmPersonDetails.enPersonMode.Show, PersonId);
 
             ShowPersonInfo.ShowDialog();
         }
@@ -149,7 +150,7 @@ namespace DVLDWinForms___Presentation_Layer
                 return;
             }
 
-            frmPersonDetails AddNewPersonForm = new frmPersonDetails(frmPersonDetails.enMode.Update, PersonId);
+            frmPersonDetails AddNewPersonForm = new frmPersonDetails(frmPersonDetails.enPersonMode.Update, PersonId);
 
             AddNewPersonForm.RefreshData += frmPersonDetails_RefreshData;
 
